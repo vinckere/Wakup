@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/txtHautConfirmation"
+        android:text="Dernier Emplacement le\n15/05/2016 à 17h35"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leRemplacer"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtHautConfirmation"
+        android:layout_marginTop="25dp"
+        android:text="@string/le_remplacer"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/validerConfirmation"
+        android:layout_below="@+id/leRemplacer"
+        android:background="@drawable/park"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/annulerConfirmation"
+        android:layout_below="@+id/leRemplacer"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/croix"/>
+
+</RelativeLayout>

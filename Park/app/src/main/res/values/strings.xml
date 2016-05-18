@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Voituroutai</string>
+    <string name="title_activity_localisation">Map</string>
+    <string name="txt_defaut_dernier_emplacement">Aucun emplacement enregistré</string>
+    <string name="le_remplacer">Le remplacer ?</string>
+    <string name="txt_emplacement_enregistre">Emplacement enregistré</string>
+    <string name="txt_localisation_en_cours">Localisation en cours</string>
+    <string name="attention">Attention</string>
+    <string name="aucun_emplacement">Aucun emplacement enregistré</string>
+    <string name="dernier_emplacement">Dernier emplacement à\n</string>
+    <string name="le"><b> </b>le<b> </b></string>
+</resources>

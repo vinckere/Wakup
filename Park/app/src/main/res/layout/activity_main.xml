@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".EmplacementVoitureView"
+    android:background="@drawable/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/layoutProgress"
+            android:background="@drawable/shape_toast"
+            android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imgLoadingBarre"
+                    android:background="@drawable/loading"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="@string/txt_localisation_en_cours"
+                    android:layout_centerInParent="true"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/cancelProgress"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/croix"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/share"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/share"
+            android:onClick="share"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/inv1"
+            android:layout_centerHorizontal="true"
+            >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/loc"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/jeMeGare"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:background="@drawable/enregistrer"
+                    android:lineSpacingExtra="10sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/inv1"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inv1"
+            android:layout_centerHorizontal="true"
+            >
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/jeRecupere"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/retrouver"
+            android:lineSpacingExtra="10sp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/voiture"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerInParent="true"
+                    />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDernierEmplacement"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/txt_defaut_dernier_emplacement"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+</RelativeLayout>
